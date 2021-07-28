@@ -11,7 +11,7 @@ namespace Models
     public class IntToLocationNum
     {
         [Required]
-        [RegularExpression("^[A-Za-z0-9]+$")]
-        public string Input { get; set; }
+        [RegularExpression("^[0-9]+$")]
+        public int input { get; set; }
     }
 }

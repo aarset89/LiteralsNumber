@@ -8,8 +8,8 @@ namespace Models.Common
 {
     public partial class CommonOut
     {
-        public string Message { get; set; }
-        public Result Result { get; set; }
+        public string message { get; set; }
+        public Result result { get; set; }
     }
 
     public enum Result{

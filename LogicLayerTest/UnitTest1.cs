@@ -14,7 +14,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(9).Output;
+            var response = dm.IntToLocationNumeral(9).output;
 
             Assert.AreEqual("ad", response);
         }
@@ -23,7 +23,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(387).Output;
+            var response = dm.IntToLocationNumeral(387).output;
 
             Assert.AreEqual("abhi", response);
         }
@@ -32,9 +32,9 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(67108864).Output;
+            var response = dm.IntToLocationNumeral(67108864).output;
 
-            Assert.AreEqual("z", response);
+            Assert.AreEqual("abcdefghijklmnopqrstuvwxyz", response);
         }
 
         [TestMethod]
@@ -42,9 +42,9 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(67108865).Output;
+            var response = dm.IntToLocationNumeral(67108865).output;
 
-            Assert.AreEqual("za", response);
+            Assert.AreEqual("abcdefghijklmnopqrstuvwxyza", response);
         }
 
         [TestMethod]
@@ -52,7 +52,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(387).Output;
+            var response = dm.IntToLocationNumeral(387).output;
 
             Assert.AreNotEqual("abhj", response);
         }
@@ -61,7 +61,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(67108864).Output;
+            var response = dm.IntToLocationNumeral(67108864).output;
 
             Assert.AreNotEqual("z1", response);
         }
@@ -71,7 +71,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.IntToLocationNumeral(67108865).Output;
+            var response = dm.IntToLocationNumeral(67108865).output;
 
             Assert.AreNotEqual("az", response);
         }
@@ -84,7 +84,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToInt("ad").Output;
+            var response = dm.LocationNumeralToInt("ad").output;
 
             Assert.AreEqual("9", response);
         }
@@ -94,7 +94,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToInt("abhi").Output;
+            var response = dm.LocationNumeralToInt("abhi").output;
 
             Assert.AreEqual("387", response);
         }
@@ -103,7 +103,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToInt("bcba").Output;
+            var response = dm.LocationNumeralToInt("bcba").output;
 
             Assert.AreEqual("9", response);
         }
@@ -112,7 +112,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToInt("bcfgh").Output;
+            var response = dm.LocationNumeralToInt("bcfgh").output;
 
             Assert.AreEqual("230", response);
         }
@@ -125,7 +125,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToAbreviated("abbc").Output;
+            var response = dm.LocationNumeralToAbreviated("abbc").output;
 
             Assert.AreEqual("ad", response);
         }
@@ -135,7 +135,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToAbreviated("aaaa").Output;
+            var response = dm.LocationNumeralToAbreviated("aaaa").output;
 
             Assert.AreEqual("c", response);
         }
@@ -145,7 +145,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToAbreviated("cac").Output;
+            var response = dm.LocationNumeralToAbreviated("cac").output;
 
             Assert.AreEqual("ad", response);
         }
@@ -155,7 +155,7 @@ namespace LogicLayerTest
         {
             DataManagerClass dm = new DataManagerClass();
 
-            var response = dm.LocationNumeralToAbreviated("dddd").Output;
+            var response = dm.LocationNumeralToAbreviated("dddd").output;
 
             Assert.AreEqual("f", response);
         }

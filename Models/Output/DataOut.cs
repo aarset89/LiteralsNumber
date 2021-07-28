@@ -9,6 +9,9 @@ namespace Models
 {
     public class DataOut : CommonOut
     {
-        public string Output { get; set; }
+        /// <summary>
+        /// opipoqiwpeoiqpwe
+        /// </summary>
+        public string output { get; set; }
     }
 }

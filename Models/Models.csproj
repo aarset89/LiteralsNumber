@@ -48,8 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\CommonOut.cs" />
-    <Compile Include="Inputs\LocationNumAbreviated.cs" />
-    <Compile Include="Inputs\LocationNumToInt.cs" />
+    <Compile Include="Inputs\LocationNumIn.cs" />
     <Compile Include="Inputs\IntToLocationNum.cs" />
     <Compile Include="Output\DataOut.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

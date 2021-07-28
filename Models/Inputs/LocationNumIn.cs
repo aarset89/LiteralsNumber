@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class LocationNumToInt
+    public class LocationNumIn
     {
         [Required]
-        [RegularExpression("^[A-Za-z0-9]+$")]
-        public string Input { get; set; }
+        [RegularExpression("^[A-Za-z]+$")]
+        public string input { get; set; }
     }
 }
