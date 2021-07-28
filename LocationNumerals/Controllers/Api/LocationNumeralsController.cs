@@ -29,7 +29,6 @@ namespace LocationNumerals.Controllers.Api
         /// <response code="200">Process OK</response>
         /// <response code="400">Invalid parameters sent</response>
         /// <response code="500">Excpetion unhandled</response> 
-        /// <returns>Retorna información del usuario autenticado</returns>
         [HttpPost]
         [Route("IntToLocationNum")]
         [ResponseType(typeof(DataOut))]
@@ -58,7 +57,6 @@ namespace LocationNumerals.Controllers.Api
         /// <response code="200">Process OK</response>
         /// <response code="400">Invalid parameters sent</response>
         /// <response code="500">Excpetion unhandled</response> 
-        /// <returns>Retorna información del usuario autenticado</returns>
         [HttpPost]
         [Route("LocationNumeralToInt")]
         [ResponseType(typeof(DataOut))]
@@ -87,7 +85,6 @@ namespace LocationNumerals.Controllers.Api
         /// <response code="200">Process OK</response>
         /// <response code="400">Invalid parameters sent</response>
         /// <response code="500">Excpetion unhandled</response> 
-        /// <returns>Retorna información del usuario autenticado</returns>
         [HttpPost]
         [Route("LocationNumeralToAbreviated")]
         [ResponseType(typeof(DataOut))]
